@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tipAmount_textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:text="$0.00"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="@dimen/padding_textView_default"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@android:color/holo_orange_light"
+        android:hint="$0.00"
+        android:labelFor="@+id/editText_BillAmount"
+        android:padding="@dimen/padding_textView_default"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/percent_textView"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:gravity="right"
+        android:text="@string/tip_percent"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25sp" />
+
+    <SeekBar
+        android:id="@+id/percent_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:indeterminate="false"
+        android:max="90"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/tip_textView"
+        android:layout_width="58dp"
+        android:layout_height="80dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:gravity="right"
+        android:text="Tip"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/total_textView"
+        android:layout_width="58dp"
+        android:layout_height="80dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:gravity="right"
+        android:text="Total"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="22sp" />
+
+    <TextView
+    android:id="@+id/textView9"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_row="3"
+    android:layout_column="1"
+    android:layout_gravity="fill_horizontal"
+    android:gravity="center"
+    android:text="$0.00"
+    android:textColor="@android:color/darker_gray"
+    android:textSize="25sp" />
+
+
+    <!-- more goes here -->
+
+
+</GridLayout>
